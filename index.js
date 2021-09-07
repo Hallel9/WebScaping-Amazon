@@ -20,8 +20,6 @@ const cheerio = require('cheerio')
     const $ = cheerio.load(pageData.html)
 
     const price = $('#priceblock_ourprice')
-    const prime = $('#priceBadging_feature_div')
-    const FreeReturns = $(`#creturns-return-policy-message`)
     console.log(`Price: ${price.text()}`)
     await browser.close()
 })()
